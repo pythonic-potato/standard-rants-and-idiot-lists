@@ -11,16 +11,16 @@
 
 # Dev environment setup
 + Work through the following sections of Sourabh Bajaj's [Mac OS setup guide](https://sourabhbajaj.com/mac-setup):
-  + Xcode
-  + Homebrew
-  + iTerm2
+	+ Xcode
+	+ Homebrew
+	+ iTerm2
 		+ Adding too many bells and whistles (e.g. `Oh My Zsh`) slows terminal startup to a crawl.  I just install `tree` and `ack`, and set my default profile colors to a dark-ish, medium-contrast scheme (e.g. `firewatch`).
-  + Emacs
+	+ Emacs
     	+ Use the Emacs Mac port version
     	+ Use `emacs -nw` to use in-terminal, or plain `emacs` to open as a new application window.
-  + Git
+	+ Git
     	+ Generate a global `.gitignore` file using [gitignore.io](https://www.gitignore.io/?templates=macos) with Python, Emacs, LaTex, Markdown, VSCode, and MacOS options.
-  + GitHub authentication setup
+	+ GitHub authentication setup
     	+ Create/update SSH config and add new SSH key to GitHub account, per [these instructions.](https://sourabhbajaj.com/mac-setup/Git/#:~:text=SSH%20Config%20for%20GitHub)
 
 ## Python
