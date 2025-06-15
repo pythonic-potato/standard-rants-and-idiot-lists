@@ -2,7 +2,8 @@
 + Move dock to right hand side of screen
 + Set lower left hot corner to lock screen
 + Install Chrome
-+ Map left `Shift` key to `Ctrl`
++ Map left `Caps Lock` key to `Ctrl`
++ 	+ System Settings --> Keyboard --> Keyboard Shortcuts --> Modifier Keys
 + Remove all but the following from the dock:
   + Finder
   + Launchpad
