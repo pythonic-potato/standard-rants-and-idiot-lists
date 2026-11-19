@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated GitHub-style previews (regenerate with build-preview.sh)
+humorless-epistemic-rigor/design-reviews/_preview/*.html
+!humorless-epistemic-rigor/design-reviews/_preview/_shell-*.html
+humorless-epistemic-rigor/design-reviews/_preview/assets
