@@ -1,0 +1,29 @@
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+mermaid.initialize({startOnLoad:false, theme:'default'});
+const blocks = [];
+document.querySelectorAll('pre > code').forEach(code => {
+  const cls = (code.className||'') + ' ' + (code.parentElement.className||'');
+  if (cls.includes('mermaid')) {
+    const d = document.createElement('pre');
+    d.className = 'mermaid'; d.style.background = 'none';
+    d.textContent = code.textContent;
+    code.parentElement.replaceWith(d);
+    blocks.push(d);
+  }
+});
+// open ancestor <details> while rendering so diagrams get real dimensions
+const toClose = [];
+blocks.forEach(b => { let el = b.closest('details');
+  while (el) { if (!el.open) { el.open = true; toClose.push(el); } el = el.parentElement.closest('details'); } });
+await mermaid.run({nodes: blocks});
+toClose.forEach(el => el.open = false);
+// GitHub-style [!NOTE] admonitions
+document.querySelectorAll('blockquote').forEach(bq => {
+  if (/^\s*\[!NOTE\]/.test(bq.textContent)) {
+    bq.classList.add('note');
+    bq.innerHTML = bq.innerHTML.replace('[!NOTE]', '<b>\u2139\ufe0f Note</b><br>');
+  }
+});
+</script>
+</body></html>

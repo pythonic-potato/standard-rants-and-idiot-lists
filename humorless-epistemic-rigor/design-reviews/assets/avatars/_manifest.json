@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Arlo Quillwick",
+    "slug": "arlo",
+    "role": "Author \u00b7 Approver",
+    "concept": "carrier pigeon (Quillwick himself), full-body profile with a sage leg band",
+    "accent": "sage",
+    "accent_hex": "#4D8B3A",
+    "style": "pixel-art full-body profile 24x24, dark outline on warm bg",
+    "files": [
+      "arlo.svg",
+      "arlo.png"
+    ]
+  },
+  {
+    "name": "Dexter",
+    "slug": "dexter",
+    "role": "Reviewer",
+    "concept": "detective cat \u2014 orange tabby with a magnifying glass (amber accent = his fur)",
+    "accent": "amber",
+    "accent_hex": "#D4940A",
+    "style": "pixel-art bust 24x24",
+    "files": [
+      "dexter.svg",
+      "dexter.png"
+    ]
+  },
+  {
+    "name": "Lyra",
+    "slug": "lyra",
+    "role": "Reviewer",
+    "concept": "golden compass / alethiometer (His Dark Materials nod) with a copper needle",
+    "accent": "copper",
+    "accent_hex": "#A85A38",
+    "style": "pixel-art object 24x24, brass compass on starry night bg",
+    "files": [
+      "lyra.svg",
+      "lyra.png"
+    ]
+  },
+  {
+    "name": "Tobin",
+    "slug": "tobin",
+    "role": "Reviewer",
+    "concept": "grey-bearded wizard",
+    "accent": "teal",
+    "accent_hex": "#18788E",
+    "style": "pixel-art bust 24x24",
+    "files": [
+      "tobin.svg",
+      "tobin.png"
+    ]
+  }
+]
